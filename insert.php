@@ -23,7 +23,6 @@ $height = mysqli_real_escape_string($conn, $_REQUEST['height']);
  
 // attempt insert query execution
 $sql = "INSERT INTO details (name, dob, gender, weight, height) VALUES ('$name', '$dob', '$gender','$weight','$height')";
-
  $result = mysqli_query($conn, $sql);
  
    if($result){
@@ -36,4 +35,5 @@ $sql = "INSERT INTO details (name, dob, gender, weight, height) VALUES ('$name',
  
 // close connection
 mysqli_close($conn);
+//test
 ?>
